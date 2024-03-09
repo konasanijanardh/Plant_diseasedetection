@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>🍁Plant Disease
+                Detection🍁 </b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">This AI Engine Will Help To Detect Disease From Following Fruites And Veggies</p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">AI Engine</b></button>
+</a>
+</center>
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Apple</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.supermarketperimeter.com/ext/resources/0430-blueberries.png?t=1588260305&width=1080" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Blueberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/health_benefits_of_cherries_slideshow/1800x1200_health_benefits_of_cherries_slideshow.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Cherry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img.freepik.com/free-psd/solitary-baby-corn-isolated-transparent-background_191095-15817.jpg?w=740&t=st=1709010127~exp=1709010727~hmac=d892f47359695c16e704ffb3d762205cffc16798cfc5909dd65fd9e31d3ba809" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Corn</p></center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://i.ndtvimg.com/i/2015-09/grapes_625x350_61443376353.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Grape</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.irishtimes.com/polopoly_fs/1.3923226.1560339148!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Orange</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/the_health_benefits_of_peaches_slideshow/thinkstock_rf_peaches.jpg?resize=650px:*" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Peach</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="data:image/jpeg;base64,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" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Pepper Bell</p></center>
+        </div>
+    </div>
+</div>
+
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-111140,msid-72862126/potato-getty.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Potato</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/326/326272/raspberries-with-ketones-in-a-bowl.jpg?w=1155&h=1541" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Raspberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://m.economictimes.com/thumb/msid-66988154,width-1200,height-900,resizemode-4,imgsize-211276/soyabean-agencies.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Soybean</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://post.healthline.com/wp-content/uploads/2020/08/squash-fruit-or-vegetable-732x549-thumbnail-732x549.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Squash</p></center>
+        </div>
+    </div>
+</div>
+
+<center class="laptop">
+<div class="row p-5">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 45%;height: 92%;">
+          <img src="https://images.indianexpress.com/2020/02/strawberry-1200.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Strawberry</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 45%;height: 92%;">
+
+          <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/tomatoes-1296x728-feature.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Tomato</p></center>
+        </div>
+    </div>
+</div>
+</center>
+
+{% endblock body %}
